@@ -18,6 +18,7 @@ python server.py
 ## 6，接口说明：
 先识别意图，如果未识别到意图，再识别faq，如果未识别到faq，最后识别闲聊
 请求方式，http+post 
+
 http://127.0.0.1:51666/chatbot
 
 输入： 
