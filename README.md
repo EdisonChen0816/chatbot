@@ -2,12 +2,14 @@
 
 ## 1，git clone
 
-## 2，下载w2v.model.vectors.npy,放在 /model/w2v 目录下
+## 2，下载w2v.model.vectors.npy，放在 /model/w2v 目录下
 链接：https://pan.baidu.com/s/1C1qB2b6HyzOpj3eqDehhEQ  提取码：5b6y 
 
 ## 3，配置语料，本demo项目中，有三种语料，
 意图语料 /data/intent
+
 faq标准问语料 /data/faq
+
 闲聊语料 /data/chat
 
 ## 4，pip3 install -r requirements.txt
