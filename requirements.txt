@@ -1,0 +1,15 @@
+gensim
+jieba
+logger
+numpy~=1.18.1
+requests
+pyemd
+pyahocorasick
+pandas
+requests
+pymysql~=0.9.3
+tensorflow~=1.13.1
+tensorflow_addons
+sklearn
+flask
+flask_json
