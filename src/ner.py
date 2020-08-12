@@ -1,6 +1,6 @@
 # encoding=utf8
 import ahocorasick
-from src.util import load_data_from_dir
+from src.util.util import load_data_from_dir
 
 
 class EntityRec:

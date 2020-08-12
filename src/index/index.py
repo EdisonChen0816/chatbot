@@ -1,11 +1,11 @@
 # encoding=utf-8
-from src import text_sim
+from src.index import text_sim
 import numpy as np
 import jieba.posseg as pseg
 import jieba
 import jieba.analyse
 from annoy import AnnoyIndex
-from src.util import load_data_from_dir
+from src.util.util import load_data_from_dir
 
 
 class Item:

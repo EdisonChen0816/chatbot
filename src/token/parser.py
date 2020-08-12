@@ -1,5 +1,5 @@
 # encoding=utf8
-from src import tokens
+from src.token import tokens
 
 
 class Parser:

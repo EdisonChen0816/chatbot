@@ -1,20 +1,18 @@
 # encoding=utf8
-from src.ner import EntityRec
-from src.index import Index
-from src.parser import Parser
+from src.token.parser import Parser
 import jieba.posseg as pseg
 import jieba
 import jieba.analyse
-from src.util import remove_punctuation
+from src.util.util import remove_punctuation
 
 
 class NLU:
 
-    def __init__(self, ner_path, intent_path, faq_path, chat_path, w2v):
-        self.ner = EntityRec(ner_path)
-        self.intent_index = Index(intent_path, w2v)
-        self.faq_index = Index(faq_path, w2v)
-        self.chat_index = Index(chat_path, w2v)
+    def __init__(self, ner, intent_index, faq_index, chat_index):
+        self.ner = ner
+        self.intent_index = intent_index
+        self.faq_index = faq_index
+        self.chat_index = chat_index
         self.parser = Parser()
 
     def get_tokens(self, query):

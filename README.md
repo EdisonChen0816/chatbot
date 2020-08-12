@@ -1,30 +1,28 @@
-# 手把手教您搭建对话系统
+# 对话系统平台
 
 ## 1，git clone
 
-## 2，下载w2v.model.vectors.npy，放在 /model/w2v 目录下
-链接：https://pan.baidu.com/s/1C1qB2b6HyzOpj3eqDehhEQ  提取码：5b6y 
-
-## 3，配置语料，本demo项目中，有三种语料，
+## 2，配置语料，有三种语料，
 意图语料 /data/intent
 
 faq标准问语料 /data/faq
 
 闲聊语料 /data/chat
 
-## 4，pip3 install -r requirements.txt
+## 3，pip3 install -r requirements.txt
 
-## 5，启动服务
+## 4，启动服务
 python server.py
 
-## 6，接口说明：
+## 5，接口说明：
 先识别意图，如果未识别到意图，再识别faq，如果未识别到faq，最后识别闲聊
 请求方式，http+post 
 
-http://127.0.0.1:51666/chatbot
+http://127.0.0.1:58888/chatbot
 
 输入： 
 {
+    "user": "1",
     "text": "上海天气怎么样"
 }
 返回意图：
@@ -59,16 +57,16 @@ http://127.0.0.1:51666/chatbot
   "status": 200
 }
 
-## 7，注意事项
+## 6，注意事项
 本服务只能部署在linux或者mac上，windows尚不支持，因为 annoy 无法在windows运行。
 
-## 8，语料生成工具
+## 7，语料生成工具
 /src/grammar/genbygram.py
 
 模板：*.cfg
 
 
-## 9, todo
+## 8, todo
 1，对话管理功能
 
 2，多轮对话

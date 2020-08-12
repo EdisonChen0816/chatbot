@@ -1,0 +1,13 @@
+# path
+ner_path: ./data/entity
+intent_path: ./data/intent
+faq_path: ./data/faq
+chat_path: ./data/chat
+w2v_path: ./model/w2v/w2v.model
+
+# logger setting
+Server_Name: chatbot
+LogLevel_Console: 10
+LogLevel_File: 10
+LogFile: log/chatbot.log
+LogFormat: '%(asctime)s|%(levelname)s:%(message)s'
