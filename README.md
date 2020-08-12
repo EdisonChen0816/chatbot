@@ -1,6 +1,9 @@
 # 对话系统平台
 
 ## 1，git clone
+下载w2v.model.vectors.npy，放在 model/w2v 目录下
+
+链接：https://pan.baidu.com/s/1C1qB2b6HyzOpj3eqDehhEQ 提取码：5b6y
 
 ## 2，配置语料，有三种语料，
 意图语料 /data/intent
